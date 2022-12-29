@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: hsl(217, 19%, 24%);
+    font-family: 'Manrope', sans-serif;
+    font-size: 28px;
+}
+
+main {
+    width: 45%;
+    margin: 50px auto 200px;
+    padding: 50px;
+    border-radius: 12px;
+    border: 1px solid hsl(193, 38%, 86%);
+    position: relative;
+}
+
+h2, p {
+    margin: 10px 0;
+    text-align: center;
+    color: hsl(150, 100%, 66%);
+    font-weight: 100;
+}
+
+p {
+    color: #fff;
+    line-height: 1.8;
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.divider {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.footer {
+    position: absolute;
+    left: 45.5%;
+    top: 93%;
+}
+
+.fetcher {
+    background-color: hsl(150, 100%, 66%);
+    padding: 15px;
+    border-radius: 50%;
+    transition-property: transform;
+    transition-duration: 1000;
+    transition-timing-function: ease;
+}
+
+.fetcher svg {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.fetcher:hover {
+    transform: scale(1.2);
+}
+
+.fetcher svg:hover {
+    cursor: pointer;
+}
+
+
+@media (min-width: 320px) and (max-width: 460px) {
+    main {
+        width: 90%;
+    }
+
+    h2 {
+        font-size: 15px;
+    }
+
+    p {
+        font-size: 18px;
+     }
+
+    .divider {
+        display: none;
+     }
+
+     .footer {
+        left: 40%;
+    }
+}
